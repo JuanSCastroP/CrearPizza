@@ -21,7 +21,6 @@ class VistaQueso: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -32,4 +31,36 @@ class VistaQueso: UIViewController {
     }
     */
 
+    var tipoQueso : String = ""
+    
+    
+    @IBAction func quesoMozarela(sender: AnyObject) { // boton queso Mozarela
+        tipoQueso = "Mozarela"
+        print(tipoQueso)
+    }
+    
+    @IBAction func quesoCheddar(sender: AnyObject) {
+        tipoQueso = "Cheddar"
+        print(tipoQueso)
+    }
+
+    @IBAction func quesoParmesano(sender: AnyObject) {
+        tipoQueso = "Parmesano"
+        print(tipoQueso)
+    }
+    
+    @IBAction func sinQueso(sender: AnyObject) {
+        tipoQueso = "Sin Queso"
+        print(tipoQueso)
+    }
+    
+    
+    
+    
+    @IBAction func continuarQueso(sender: AnyObject) { // boton continuar vista queso
+        
+    }
+    
+    
+    
 }

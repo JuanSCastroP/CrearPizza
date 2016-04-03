@@ -80,12 +80,12 @@
 				048A2B751CAF57300020EEF5 /* AppDelegate.swift */,
 				048A2B771CAF57300020EEF5 /* ViewController.swift */,
 				0482B34B1CB1956500087739 /* VistaSelecionaMasa.swift */,
+				0482B34D1CB1AF7300087739 /* VistaQueso.swift */,
 				048A2B791CAF57300020EEF5 /* Main.storyboard */,
 				048A2B7F1CAF57300020EEF5 /* Assets.xcassets */,
 				048A2B811CAF57300020EEF5 /* LaunchScreen.storyboard */,
 				048A2B841CAF57300020EEF5 /* Info.plist */,
 				048A2B7C1CAF57300020EEF5 /* CrearPizza.xcdatamodeld */,
-				0482B34D1CB1AF7300087739 /* VistaQueso.swift */,
 			);
 			path = CrearPizza;
 			sourceTree = "<group>";
