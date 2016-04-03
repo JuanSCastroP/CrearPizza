@@ -53,10 +53,20 @@ class ViewController: UIViewController {
         print("Tamaño: \(tpizza)")
     }
     
+    private func showErrorAlertMessage(mensaje: String) {
+        let alertController = UIAlertController(title: "Error", message: mensaje, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        //clearFields()
+    }
     
     @IBAction func ContinuarTamano(sender: AnyObject) { // boton para continuar
-        print("Ha seleccionado \(tpizza)")
-        enviarTamano()
+        if tpizza == ""{
+            showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
+        }else{
+            print("Ha seleccionado \(tpizza)")
+            enviarTamano()
+        }
     }
     
     

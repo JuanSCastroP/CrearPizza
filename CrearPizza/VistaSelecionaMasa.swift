@@ -42,10 +42,7 @@ class VistaSelecionaMasa: UIViewController {
         mostrarTamano2.text = traerTamanoPizza
     }
   
-    
-    
-    
-    
+
 
     @IBAction func masaDelgada(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Delgada"
@@ -60,6 +57,22 @@ class VistaSelecionaMasa: UIViewController {
     @IBAction func masaGruesa(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Gruesa"
         print("Tipo de masa: \(tipoMasa)")
+    }
+    
+    private func showErrorAlertMessage(mensaje: String) { // para mostrar mensaje de error
+        let alertController = UIAlertController(title: "Error", message: mensaje, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        //clearFields()
+    }
+     //showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
+    
+    @IBAction func continuarMasa(sender: AnyObject) {
+       if tipoMasa == ""{
+        showErrorAlertMessage("Por favor selecciona una Masa para tu Pizza")
+        }
+       else{}
+        
     }
 
 }
