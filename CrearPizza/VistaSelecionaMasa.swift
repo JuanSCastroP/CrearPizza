@@ -46,25 +46,20 @@ class VistaSelecionaMasa: UIViewController {
     
     
     
- /*
-    @IBAction func masaDelgada(sender: AnyObject) {
+
+    @IBAction func masaDelgada(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Delgada"
         print("Tipo de masa: \(tipoMasa)")
     }
     
-    @IBAction func masaCrujiente(sender: AnyObject) {
+    @IBAction func masaCrujiente(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Crujiente"
         print("Tipo de masa: \(tipoMasa)")
     }
     
-   
-    @IBAction func masaGruesa(sender: AnyObject) {
+    @IBAction func masaGruesa(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Gruesa"
         print("Tipo de masa: \(tipoMasa)")
     }
-    
-    */
-    
-
 
 }

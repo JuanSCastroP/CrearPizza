@@ -182,6 +182,7 @@
                                 </state>
                                 <connections>
                                     <action selector="masaCrujiente:" destination="ZYs-BP-Fdu" eventType="touchUpInside" id="qbJ-xj-dfT"/>
+                                    <action selector="masaGruesa:" destination="ZYs-BP-Fdu" eventType="touchUpInside" id="ELV-xz-o2z"/>
                                 </connections>
                             </button>
                         </subviews>
