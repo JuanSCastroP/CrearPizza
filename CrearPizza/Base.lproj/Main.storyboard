@@ -317,6 +317,11 @@
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rZ9-nt-aWQ"/>
+                    <connections>
+                        <outlet property="tamanoPizza2" destination="hOj-B1-K2e" id="Z34-by-ldv"/>
+                        <outlet property="tipoMasa" destination="aMt-4h-D5W" id="UCW-Ft-OGt"/>
+                        <outlet property="traerMasa" destination="aMt-4h-D5W" id="2ux-0v-a3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zf-nV-9co" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

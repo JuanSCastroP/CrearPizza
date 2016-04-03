@@ -51,6 +51,19 @@ class VistaSelecionaMasa: UIViewController {
     //showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
 
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let masaP = enviarMasa()
+        let sigVista = segue.destinationViewController as! VistaQueso // obtiene referencia a la siguiente vista
+        sigVista.traerMasaEnVQueso = masaP // se calcula el valor y sea enviado al objeto de la segunda pantalla
+        
+        let vistaQueso = segue.destinationViewController as! VistaQueso // obtiene referencia a la siguiente vista
+        vistaQueso.traerTamanoPizzaEnVQueso = traerTamanoPizza
+        
+        
+    }
+    
+
+    
     @IBAction func masaDelgada(sender: AnyObject) { // boton masa delgada
         tipoMasa = "Delgada"
         print("Tipo de masa: \(tipoMasa)")
