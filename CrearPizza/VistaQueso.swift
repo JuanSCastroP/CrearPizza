@@ -49,7 +49,7 @@ class VistaQueso: UIViewController {
     @IBOutlet weak var tipoMasa: UILabel! //mostrar tpo masa
     
     
-    override func viewWillAppear(animated: Bool) {// trae el tamaño de la pizza
+    override func viewWillAppear(animated: Bool) {// trae el tamaño de la pizza y masa
         tamanoPizza2.text = traerTamanoPizzaEnVQueso
         traerMasa.text = traerMasaEnVQueso
         
@@ -94,6 +94,25 @@ class VistaQueso: UIViewController {
         print("Continuara con Queso: \(tipoQueso)")
         return tipoQueso
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Prepara Queso
+        let quesoTipo = enviarQueso()
+        let sigVista = segue.destinationViewController as! VIstaIngredientes // obtiene referencia a la siguiente vista
+        sigVista.traerQuesoEnIngredientes = quesoTipo // se calcula el valor y sea enviado al objeto de la segunda pantalla
+        
+        // Prepara Tamaño
+        let tamañoTipo = segue.destinationViewController as! VIstaIngredientes // obtiene referencia a la siguiente vista
+        tamañoTipo.traerTamanoEnIngredientes = traerTamanoPizzaEnVQueso
+        
+        // Prepara Masa
+        let masaTipo = segue.destinationViewController as! VIstaIngredientes // obtiene referencia a la siguiente vista
+        masaTipo.traerMasaEnIngredientes = traerMasaEnVQueso
+        
+        
+    }
+    
     
     
     
