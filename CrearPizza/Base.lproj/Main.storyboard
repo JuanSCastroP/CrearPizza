@@ -182,6 +182,7 @@
                                 </state>
                                 <connections>
                                     <action selector="continuarMasa:" destination="ZYs-BP-Fdu" eventType="touchUpInside" id="V9P-N3-2WF"/>
+                                    <segue destination="r8Y-Vh-xih" kind="push" id="ewd-hE-fhE"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DLd-5Z-HAI">
@@ -199,6 +200,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkZ-Hr-QZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="166"/>
+        </scene>
+        <!--Vista Queso-->
+        <scene sceneID="sAR-Xx-djT">
+            <objects>
+                <viewController id="r8Y-Vh-xih" customClass="VistaQueso" customModule="CrearPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N2C-do-Xa5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rZ9-nt-aWQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zf-nV-9co" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="166"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JJ2-Vs-pah">

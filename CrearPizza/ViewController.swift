@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         if tpizza == ""{
             showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
         }else{
-            print("Ha seleccionado \(tpizza)")
+            print("Continuara con tamaño:\(tpizza)")
             enviarTamano()
         }
     }
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
 
     func enviarTamano() -> String{ // envia tamaño a la vista de seleccion de masa
         return tpizza
-        print(tpizza)
+
     }
     
 

@@ -41,7 +41,14 @@ class VistaSelecionaMasa: UIViewController {
     override func viewWillAppear(animated: Bool) {// trae el tamaño de la pizza
         mostrarTamano2.text = traerTamanoPizza
     }
-  
+    
+    private func showErrorAlertMessage(mensaje: String) { // para mostrar mensaje de error
+        let alertController = UIAlertController(title: "Error", message: mensaje, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        //clearFields()
+    }
+    //showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
 
 
     @IBAction func masaDelgada(sender: AnyObject) { // boton masa delgada
@@ -54,25 +61,28 @@ class VistaSelecionaMasa: UIViewController {
         print("Tipo de masa: \(tipoMasa)")
     }
     
-    @IBAction func masaGruesa(sender: AnyObject) { // boton masa delgada
+    @IBAction func masaGruesa(sender: AnyObject) { // boton masa gruesa
         tipoMasa = "Gruesa"
         print("Tipo de masa: \(tipoMasa)")
     }
     
-    private func showErrorAlertMessage(mensaje: String) { // para mostrar mensaje de error
-        let alertController = UIAlertController(title: "Error", message: mensaje, preferredStyle: .Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        self.presentViewController(alertController, animated: true, completion: nil)
-        //clearFields()
-    }
-     //showErrorAlertMessage("Por favor selecciona un tamaño para tu Pizza")
     
     @IBAction func continuarMasa(sender: AnyObject) {
        if tipoMasa == ""{
         showErrorAlertMessage("Por favor selecciona una Masa para tu Pizza")
         }
-       else{}
+       else{
+        print("Masa tipo \(tipoMasa)")
+        enviarMasa()
+        }
         
     }
+    
+    func enviarMasa() -> String{
+        print("Continuara con masa: \(tipoMasa)")
+        return tipoMasa
+    }
+    
+    
 
 }
