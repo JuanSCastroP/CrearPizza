@@ -65,7 +65,7 @@ class VIstaIngredientes: UIViewController {
     @IBAction func continuarIngredientes(sender: AnyObject) {
         
 //        if ingrediente == "" || contador == 0{
-//            showErrorAlertMessage("Por favor selecciona un Ingrediente para tu Pizza")
+//            showErrorAlertMessage("Por favor selecciona al menos un Ingrediente para tu Pizza")
 //        }
 //        else{
             print("Masa tipo \(ingrediente)")
@@ -96,11 +96,46 @@ class VIstaIngredientes: UIViewController {
         // Prepara Queso
         let quesoTipo = segue.destinationViewController as! VistaConfirmacion // obtiene referencia a la siguiente vista
         quesoTipo.traerQuesoEnConfirmar = traerQuesoEnIngredientes
-        
-        
     }
 
-  
+    
+    @IBAction func switchJamon(sender: AnyObject) {
+        ingrediente += "Jamón "
+        print (ingrediente)
+    }
+    @IBAction func switchPepperoni(sender: AnyObject) {
+        ingrediente += "Pepperoni "
+        print (ingrediente)
+    }
+    @IBAction func switchPavo(sender: AnyObject) {
+        ingrediente += "Pavo "
+        print (ingrediente)
+    }
+    @IBAction func switchPollo(sender: AnyObject) {
+        ingrediente += "Pollo "
+        print (ingrediente)
+    }
+    @IBAction func switchPina(sender: AnyObject) {
+        ingrediente += "Piña "
+        print (ingrediente)
+    }
+    @IBAction func switchMaiz(sender: AnyObject) {
+        ingrediente += "Maíz "
+        print (ingrediente)
+    }
+    @IBAction func switchChampinon(sender: AnyObject) {
+        ingrediente += "Champiñón "
+        print (ingrediente)
+    }
+    @IBAction func switchCebolla(sender: AnyObject) {
+        ingrediente += "Cebolla "
+        print (ingrediente)
+    }
+    @IBAction func switchTomate(sender: AnyObject) {
+        ingrediente += "Tomate "
+        print (ingrediente)
+    }
+    
 
     
 }

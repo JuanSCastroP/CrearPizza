@@ -22,7 +22,7 @@ class VistaConfirmacion: UIViewController {
     }
     
     private func showErrorAlertMessage(mensaje: String) { // para mostrar mensaje de error
-        let alertController = UIAlertController(title: "ALERTA", message: mensaje, preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "ATENCIÓN!!", message: mensaje, preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
         //clearFields()
@@ -57,5 +57,9 @@ class VistaConfirmacion: UIViewController {
         
     }
     
+    @IBAction func confirmarOrden(sender: AnyObject) {
+        showErrorAlertMessage("Tu Pizza ha sido confirmada. En minutos podrás degustarla!")
+        
+    }
 
 }
